@@ -1,0 +1,19 @@
+banco
+
+tbusuario:
+codigo int primary key
+nome varchar(90)
+email varchar(90)
+senha varchar(90)
+perfil varchar(90)
+
+tbserviço:
+
+codigo int primary key
+funcionario varchar(90)
+datadochamado date 
+descricao varchar(250)
+setor varchar(90)
+status varchar(25)
+
+
