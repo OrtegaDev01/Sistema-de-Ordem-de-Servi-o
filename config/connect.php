@@ -4,6 +4,6 @@ $host = "localhost";
 $password = "senha";
 $database = "ordem";
 $connection = mysqli_connect($host, $user, $password, $database);
-if($connection == false){
-    echo("Erro de conexão:". mysqli_connect_error($connection));
+if (!$connection) {
+    echo ("Erro de conexão:" . mysqli_connect_error($connection));
 }

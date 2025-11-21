@@ -17,6 +17,35 @@
 /*M!100616 SET @OLD_NOTE_VERBOSITY=@@NOTE_VERBOSITY, NOTE_VERBOSITY=0 */;
 
 --
+-- Table structure for table `tbtecnico`
+--
+
+DROP TABLE IF EXISTS `tbtecnico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbtecnico` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `funcionario` varchar(90) NOT NULL,
+  `data_chamado` datetime DEFAULT NULL,
+  `descricao` varchar(400) DEFAULT NULL,
+  `setor` varchar(80) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbtecnico`
+--
+
+LOCK TABLES `tbtecnico` WRITE;
+/*!40000 ALTER TABLE `tbtecnico` DISABLE KEYS */;
+set autocommit=0;
+/*!40000 ALTER TABLE `tbtecnico` ENABLE KEYS */;
+UNLOCK TABLES;
+commit;
+
+--
 -- Table structure for table `tbusuario`
 --
 
@@ -53,4 +82,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2025-11-18 14:30:23
+-- Dump completed on 2025-11-21  9:01:58
